@@ -1,0 +1,11 @@
+Flask
+flask sqlalchemy
+flask bcrypt
+datetime
+email_validator
+flask_wtf
+flask login
+secret - token
+os
+pillow
+pip install flask-mail
