@@ -24,7 +24,7 @@ def post(post_id):
         post = Post.query.get_or_404(post_id)
         return render_template("post.html", post=post)
 
-@posts.route("/post/<int:post_id>/update", methods=["GET", "POST"]) # we want to use methods to submit the form even though request is not used
+@posts.route("/post/<int:post_id>/update", methods=["GET", "POST"]) 
 @login_required
 def update_post(post_id):
     post = Post.query.get_or_404(post_id)
