@@ -62,7 +62,7 @@ def account():
     elif request.method == "GET":  # it prints the name and email in the form alternate for place holder
         form.username.data = current_user.username
         form.email.data = current_user.email
-    image_file = url_for("static", filename="default_image/" + current_user.image_file)
+        image_file = url_for("static", filename="default_image/" + current_user.image_file)
     return render_template("account.html", image_file = image_file, form=form) 
 
 @users.route("/user/<string:username>")
