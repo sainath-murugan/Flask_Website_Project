@@ -125,3 +125,16 @@ def save_picture(form_picture):
     picture_fn = random_hex + f_ext
     picture_path = os.path.join(current_app.root_path, "static/default_image", picture_fn) 
 ```
+
+![alt_text](https://github.com/sainath-murugan/Flask_Website_Project/blob/main/Flask_Project/web/Profile%20Update.JPG)
+
+
+# Good Pagination in Pages
+  I have used pagination in pages so it will be look nice to see maximum 5 post in a single page.This feature is also used in individual profiles
+![alt_text](https://github.com/sainath-murugan/Flask_Website_Project/blob/main/Flask_Project/web/pagination.JPG)
+
+# Some Extra Features
+   I have use Blue Prints in this Project, so the future development can be done in the website very easily
+
+# copyright :copyright:
+   The idea for this project was inspired by [Corey shafer](https://www.youtube.com/user/schafer5), a thanks for him :pray:
