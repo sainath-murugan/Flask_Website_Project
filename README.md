@@ -17,7 +17,7 @@ Readdown the specification of the website given below :point_down:
  # Secured Registration
    In this project i have used `Flask-WTF` form for form validation and `Email-Validator` for email validation. so by default the form does not acccepts the email with improper validation and username less than 5 charactors.
    
-   I have used `FLASK-SQLAlchemy` for database as the result  the author of th post can be viewed by `Relationship` function in `Flask-SQLAlchemy`, and this function also gives the flexibility to view how many post is posted by an individual account. And each individual account have gievn a default image  `common.jpg `
+   I have used `FLASK-SQLAlchemy` for database as the result  the author of the post can be viewed by `Relationship` function in `Flask-SQLAlchemy`, and this function also gives the flexibility to view how many post is posted by an individual account. And each individual account have gievn a default image  `common.jpg `
  ```python
  class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
