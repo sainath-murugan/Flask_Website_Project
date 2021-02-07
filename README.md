@@ -70,6 +70,7 @@ def reset_request():
     return render_template("reset_request.html", title = "reset_password",  form=form)
   ```
   ![alt_text](https://github.com/sainath-murugan/Flask_Website_Project/blob/main/Flask_Project/web/password%20reset.JPG)
+  ![alt_text](https://github.com/sainath-murugan/Flask_Website_Project/blob/main/Flask_Project/web/email.JPG)
   ![alt_text](https://github.com/sainath-murugan/Flask_Website_Project/blob/main/Flask_Project/web/password%20reseted.JPG)
   
   # Deleting and updating Post
