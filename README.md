@@ -74,7 +74,7 @@ def reset_request():
   ![alt_text](https://github.com/sainath-murugan/Flask_Website_Project/blob/main/Flask_Project/web/password%20reseted.JPG)
   
   # Deleting and updating Post
-   The current User can delete and edit the post, but the user of another account cannot edit or delete the post of current account as it for secured as mentioned above
+   The current User can delete and edit the post his account, but the user of another account cannot edit or delete the post of another account as it for secured as mentioned above
   
   ![alt_text](https://github.com/sainath-murugan/Flask_Website_Project/blob/main/Flask_Project/web/Update_Delete_Post.JPG)
   
@@ -112,7 +112,7 @@ def delete_post(post_id):
         flash("your post have been deleted", "success")
     return redirect(url_for('main.home'))
  ```
-Any User in the website cannot view His/Her account untill they were loged in this function is builded by `login_required`
+Any User in the website cannot view His/Her account untill they were logged in, this function is builded by `login_required`
 
 # Upgading Profile
 
