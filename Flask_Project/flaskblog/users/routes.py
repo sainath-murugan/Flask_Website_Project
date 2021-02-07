@@ -31,7 +31,7 @@ def login():
             user = User.query.filter_by(email = form.email.data).first()
             if user and bcrypt.check_password_hash(user.password, form.password.data):
                 login_user(user, form.remember.data)
-                next_page = request.args.get("next") #args is a dictionary but dont use square bracket because it will show error if the paramete does not exits
+                next_page = request.args.get("next") 
                 if next_page:
                     return redirect(next_page)
                 else:
@@ -53,13 +53,13 @@ def account():
     if form.validate_on_submit():
         if form.picture.data:
             picture_file = save_picture(form.picture.data)
-            current_user.image_file = picture_file #doubt in db
+            current_user.image_file = picture_file 
         current_user.username = form.username.data
         current_user.email = form.email.data #doubt in db
         db.session.commit()
         flash("Your account have been updated", "success")
         return redirect(url_for("users.account"))
-    elif request.method == "GET":  # it prints the name and email in the form alternate for place holder
+    elif request.method == "GET": 
         form.username.data = current_user.username
         form.email.data = current_user.email
         image_file = url_for("static", filename="default_image/" + current_user.image_file)
