@@ -12,7 +12,7 @@ def save_picture(form_picture):
     picture_fn = random_hex + f_ext
     picture_path = os.path.join(current_app.root_path, "static/default_image", picture_fn) 
 
-    output_size = (125, 125) #because css only diaplay iimage correclt in 125x125 resolution
+    output_size = (125, 125) 
     image_sizing = Image.open(form_picture)
     image_sizing.thumbnail(output_size)
     image_sizing.save(picture_path)
@@ -24,6 +24,6 @@ def send_reset_email(user):
     msg = Message("Password reset request", sender="demoappflask@gmail.com", recipients=[user.email])
     msg.body = f""" To reset your password visit the following
 link {url_for("users.reset_token", token=token, _external=True)}  
-if you did not make he request then simply ignore it"""   #_external used to get url in absolute path
+if you did not make he request then simply ignore it"""   
   
     mail.send(msg)
