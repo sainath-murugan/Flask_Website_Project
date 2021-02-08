@@ -11,7 +11,7 @@ Readdown the specification of the website given below :point_down:
  * Privacy protection
  * Password reset capability by Email
  * Deleting and updating Post
- * Upgading Profile
+ * Upgrading Profile
  * Good Pagination in Pages
  
  # Secured Registration
